@@ -1,13 +1,166 @@
 .App {
   text-align: center;
+  background: rgb(10,10,10);
+  /* maybe change antiquewhite to white or find better? */
+  color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 90vw;
+  height: auto;
+  min-height: 100%;
+  /* max-height: 110vh;  */
+  /* min-height: 100vh; */
+  padding-top: 1rem;
+  padding-bottom: 7rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+h2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 auto;
+  /* padding-left: .75rem; */
+  padding-bottom: 1rem;
+}
+
+h3 {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.main-section > p {
+  display: flex;
+  width: 70%;
+  /* better way to do this? */
+  line-height: 135%;
+  text-align: justify;
+  text-justify:inter-word;
+}
+
+
+/* ----------- NAVBAR ----------- */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 25vh;
+}
+
+.navbar > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 35%;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  all: unset;
+  cursor: pointer;
+  /* position: relative; */
+
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: rgb(255, 0, 102);
+  transition: 0.3s;
+}
+
+/* ----------- CONTACT ----------- */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  /* adjust rem based on content etc */
+  width: 80vw;
+  height: 25vw;
+  padding-top: rem;
+}
+
+.contact > h2 {
+  justify-content: center;
+  width: 100%;
+}
+
+.form {
+  justify-content: center;
+  width: 100%;
+}
+
+textarea {
+  justify-content: center;
+  padding:10px;
+  border: 1px solid white;
+  border-radius:10px;
+  width: 40%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+
+input {
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius:10px;
+  width: 20%;
+}
+
+button {
+  margin: 12px;
+  /* padding: 10px; */
+}
+
+/* ----------- FOOTER ----------- */
+
+.footer {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 80%;
+  padding: 0;
+}
+
+.footer a {
+  display: flex;
+  all: unset;
+  cursor: pointer;
+  bottom: 0;
+}
+
+.footer a:hover {
+  color: rgb(255, 0, 102);
+  transition: 0.3s;
+}
+
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -26,13 +179,13 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
